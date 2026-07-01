@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-	int a, b, C, T;
-	cin >> a >> b;
-	T = a * 10 + b;
-	C = T / 19;
-	cout << C;
+	int a, b, c, d, e, f;
+	cin >> a >> b >> c >> d;
+	e = ((c * 60 + d) - (a * 60 + b)) / 60;
+	f= ((c * 60 + d) - (a * 60 + b)) % 60;
+	cout << e << " " << f;
 	return 0;
 } 
