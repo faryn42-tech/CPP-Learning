@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, b, C, T;
+	cin >> a >> b;
+	T = a * 10 + b;
+	C = T / 19;
+	cout << C;
+	return 0;
+} 
