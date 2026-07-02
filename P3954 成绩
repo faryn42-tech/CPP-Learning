@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	double G;
+	cin >> a >> b >> c;
+	G = a * 0.2 + b * 0.3 + c * 0.5;
+	cout << G;
+	return 0;
+} 
