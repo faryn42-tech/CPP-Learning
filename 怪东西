@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string A, B, C;
+	cin >> A;
+	if (bool A = ("哥哥"))
+	{
+		cout << "太小了" << endl;
+	}
+	else
+	{
+		return 0;
+	}
+	cin >> B;
+    if (bool B = "叔叔")
+	{
+		cout << "太老了" << endl;
+	}
+	else
+	{
+		return 0;
+	}
+	cin >> C;
+	if (bool C = "妈妈")
+	{
+		cout << "性别不对，仔细想想应该叫什么？" << endl;
+	}
+	else
+	{
+		return 0;
+	}
+	return 0;
+}
