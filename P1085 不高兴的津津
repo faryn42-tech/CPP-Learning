@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int sum[8] = { 0 };
-	//下标0-7，sum[1]-sum[7]存数据，sum[0]闲置，非常之安全！
+	//下标0-7，sum[1]-sum[7]存数据，sum[0]闲置，非常之安全！同时初始化所有元素为0，避免垃圾值，不初始化可能随机输出
 	int a, b;
 	int max = 0;
 	int ans = 0;//要是每天都不会不高兴，那就输出0
