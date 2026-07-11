@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sum[8] = { 0 };
+	//下标0-7，sum[1]-sum[7]存数据，sum[0]闲置，非常之安全！
+	int a, b;
+	int max = 0;
+	int ans = 0;//要是每天都不会不高兴，那就输出0
+	for (int i = 1; i <= 7; i++)
+	{
+		cin >> a >> b;
+		sum[i] = a + b;//存sum[1]-sum[7]
+		if (sum[i] > 8 && sum[i] > max)
+		{
+			max = sum[i];
+			ans = i;
+		}
+	}
+	cout << ans << endl;
+	return 0; 
+}
