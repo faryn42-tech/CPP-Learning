@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, b, sum, ans;
+	int max = 8;//8和0无所谓吧，反正要被大于8的取代
+	for (int i = 1; i <= 7; i++)//周一到周日7天
+	{
+		cin >> a >> b;
+		sum = a + b;
+		if (sum > 8 && sum > max)
+		{
+			max = sum;
+			ans = i;
+		}
+	}
+	cout << ans << endl;
+	return 0; 
+}
