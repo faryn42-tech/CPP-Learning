@@ -1,0 +1,23 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int n;
+	double price;
+	cin >> n;
+	if (n <= 150)
+	{
+		price = 0.4463 * n;
+	}
+	else if (n >= 151 && n <= 400)
+	{
+		price = 150 * 0.4463 + (n - 150) * 0.4663;
+	}
+	else if (n >= 401)
+	{
+		price = 150 * 0.4463 + (400 - 150) * 0.4663+(n-400)*0.5663;
+	}
+	cout << fixed << setprecision(1) << price;
+	return 0; 
+}
