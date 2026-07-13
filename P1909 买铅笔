@@ -1,0 +1,30 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int n, cnt, price;
+	int total = 0;
+	int minTotal = 1e9;
+	cin >> n;
+	for (int i = 1; i <= 3; i++)
+	{
+		cin >>cnt >> price;
+		if (n % cnt == 0)
+		{
+			total =( n / cnt) * price;
+		}
+		else if (n % cnt != 0)
+		{
+			int m;
+			m = ceil(1.0 * n / cnt);
+			total = m * price;
+		}
+		if (minTotal > total)
+		{
+			minTotal = total;
+		}
+	}
+	cout << minTotal;
+	return 0; 
+}
