@@ -1,0 +1,28 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int n, k;
+	int sum1 = 0;
+	int sum2 = 0;
+	int cnt1 = 0;
+	int cnt2 = 0;
+	cin >> n >> k; 
+	for (int i = 1; i <= n; i++)
+	{
+		if (i % k == 0)
+		{
+			cnt1++;
+			sum1 += i;
+		}
+		else if (i % k != 0)
+		{
+			cnt2++;
+			sum2 += i;
+		}
+	}
+	cout << fixed << setprecision(1) << 1.0 * sum1 / cnt1 << " ";
+	cout << fixed << setprecision(1) << 1.0 * sum2 / cnt2;
+	return 0;
+}
