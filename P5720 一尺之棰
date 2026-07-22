@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int a;
+	int cnt = 1;
+	cin >> a;
+	//不确定循环次数时用while循环
+	while (a != 1)
+	{
+		a = floor(a / 2);
+		cnt++;
+	}
+	cout << cnt;
+	return 0;
+}
